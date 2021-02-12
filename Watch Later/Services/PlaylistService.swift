@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PlaylistManager {
+class PlaylistService {
     private let defaults = UserDefaults.standard
     private let playlistItemsKey = "playlistItems"
     private var playlistItems: [SearchResultItem] {
@@ -37,5 +37,9 @@ class PlaylistManager {
 
     func allSaved() -> [SearchResultItem] {
         return playlistItems
+    }
+
+    func removeAll() {
+        playlistItems = [SearchResultItem]()
     }
 }

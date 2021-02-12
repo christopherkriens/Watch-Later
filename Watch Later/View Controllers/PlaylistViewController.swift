@@ -9,7 +9,7 @@ import UIKit
 
 class PlaylistViewController: UIViewController {
     let tableView = UITableView()
-    let playlistManager = PlaylistManager()
+    let playlistManager = PlaylistService()
     let tableViewCellName = "playlistCell"
 
     var playlistData = [SearchResultItem]()
@@ -60,5 +60,9 @@ extension PlaylistViewController: UITableViewDataSource, UITableViewDelegate {
         cell.detailTextLabel?.text = item.year
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "My favorite color is #1E90FF"
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 enum ServiceError: String, Error {
     case queryEncoding = "Unable to build a valid search query with the provided search input."
-    case networkData = ""
+    case networkData = "Unable to retrieve data from server."
     case jsonDecoding = "JSON Decoding failed, the data received isn't in a format that was expected."
 }
 

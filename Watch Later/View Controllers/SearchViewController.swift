@@ -10,20 +10,25 @@ import UIKit
 class SearchViewController: UIViewController {
     let navigationBar = UINavigationBar()
     let tableView = UITableView()
-    var resultSearchController = UISearchController()
-
     let tableViewCellName = "searchResultCell"
 
+    var resultSearchController = UISearchController()
     var searchResults = SearchResult()
-    lazy var playlistManager = PlaylistManager()
+    lazy var playlistManager = PlaylistService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupTableView()
+        setup()
     }
 
-    private func setupTableView() {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        resultSearchController.isActive = false
+    }
+
+    private func setup() {
         view.addSubview(tableView)
 
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -43,9 +48,10 @@ class SearchViewController: UIViewController {
             controller.obscuresBackgroundDuringPresentation = false
             controller.searchBar.tintColor = .red
             controller.searchBar.delegate = self
+
             return controller
         })()
-        
+
         tableView.tableHeaderView = resultSearchController.searchBar
     }
 }
