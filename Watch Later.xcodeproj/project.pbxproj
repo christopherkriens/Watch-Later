@@ -9,27 +9,31 @@
 /* Begin PBXBuildFile section */
 		E22E695325D4B97900CF53B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E695225D4B97900CF53B6 /* AppDelegate.swift */; };
 		E22E695525D4B97900CF53B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E695425D4B97900CF53B6 /* SceneDelegate.swift */; };
-		E22E695725D4B97900CF53B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E695625D4B97900CF53B6 /* ViewController.swift */; };
-		E22E695A25D4B97900CF53B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22E695825D4B97900CF53B6 /* Main.storyboard */; };
+		E22E695725D4B97900CF53B6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E695625D4B97900CF53B6 /* SearchViewController.swift */; };
 		E22E695C25D4B97A00CF53B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22E695B25D4B97A00CF53B6 /* Assets.xcassets */; };
 		E22E695F25D4B97A00CF53B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22E695D25D4B97A00CF53B6 /* LaunchScreen.storyboard */; };
 		E22E696A25D589B200CF53B6 /* SearchResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E696925D589B200CF53B6 /* SearchResultItem.swift */; };
 		E22E696E25D58C0D00CF53B6 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E696D25D58C0D00CF53B6 /* SearchResult.swift */; };
-		E22E697225D5987300CF53B6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E697125D5987300CF53B6 /* Service.swift */; };
+		E22E697225D5987300CF53B6 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E697125D5987300CF53B6 /* SearchService.swift */; };
+		E22E697625D5C66000CF53B6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E697525D5C66000CF53B6 /* TabBarController.swift */; };
+		E22E697B25D5EB3400CF53B6 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22E697A25D5EB3400CF53B6 /* PlaylistViewController.swift */; };
+		E2D86A0B25D5F76700212102 /* PlaylistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D86A0A25D5F76700212102 /* PlaylistManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E22E694F25D4B97900CF53B6 /* Watch Later.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Later.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22E695225D4B97900CF53B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E22E695425D4B97900CF53B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E22E695625D4B97900CF53B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E22E695925D4B97900CF53B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E22E695625D4B97900CF53B6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E22E695B25D4B97A00CF53B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E22E695E25D4B97A00CF53B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E22E696025D4B97A00CF53B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E22E696925D589B200CF53B6 /* SearchResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultItem.swift; sourceTree = "<group>"; };
 		E22E696D25D58C0D00CF53B6 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		E22E697125D5987300CF53B6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E22E697125D5987300CF53B6 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		E22E697525D5C66000CF53B6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E22E697A25D5EB3400CF53B6 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaylistViewController.swift; path = "Watch Later/View Controllers/PlaylistViewController.swift"; sourceTree = SOURCE_ROOT; };
+		E2D86A0A25D5F76700212102 /* PlaylistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +69,10 @@
 				E22E695225D4B97900CF53B6 /* AppDelegate.swift */,
 				E22E695425D4B97900CF53B6 /* SceneDelegate.swift */,
 				E22E696825D5892C00CF53B6 /* Models */,
-				E22E695625D4B97900CF53B6 /* ViewController.swift */,
-				E22E697125D5987300CF53B6 /* Service.swift */,
-				E22E695825D4B97900CF53B6 /* Main.storyboard */,
+				E22E697D25D5EB4000CF53B6 /* View Controllers */,
+				E22E697525D5C66000CF53B6 /* TabBarController.swift */,
+				E22E697125D5987300CF53B6 /* SearchService.swift */,
+				E2D86A0A25D5F76700212102 /* PlaylistManager.swift */,
 				E22E695B25D4B97A00CF53B6 /* Assets.xcassets */,
 				E22E695D25D4B97A00CF53B6 /* LaunchScreen.storyboard */,
 				E22E696025D4B97A00CF53B6 /* Info.plist */,
@@ -82,6 +87,15 @@
 				E22E696925D589B200CF53B6 /* SearchResultItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E22E697D25D5EB4000CF53B6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E22E697A25D5EB3400CF53B6 /* PlaylistViewController.swift */,
+				E22E695625D4B97900CF53B6 /* SearchViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +157,6 @@
 			files = (
 				E22E695F25D4B97A00CF53B6 /* LaunchScreen.storyboard in Resources */,
 				E22E695C25D4B97A00CF53B6 /* Assets.xcassets in Resources */,
-				E22E695A25D4B97900CF53B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,26 +167,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22E697B25D5EB3400CF53B6 /* PlaylistViewController.swift in Sources */,
 				E22E696E25D58C0D00CF53B6 /* SearchResult.swift in Sources */,
-				E22E695725D4B97900CF53B6 /* ViewController.swift in Sources */,
+				E22E695725D4B97900CF53B6 /* SearchViewController.swift in Sources */,
+				E2D86A0B25D5F76700212102 /* PlaylistManager.swift in Sources */,
 				E22E696A25D589B200CF53B6 /* SearchResultItem.swift in Sources */,
 				E22E695325D4B97900CF53B6 /* AppDelegate.swift in Sources */,
+				E22E697625D5C66000CF53B6 /* TabBarController.swift in Sources */,
 				E22E695525D4B97900CF53B6 /* SceneDelegate.swift in Sources */,
-				E22E697225D5987300CF53B6 /* Service.swift in Sources */,
+				E22E697225D5987300CF53B6 /* SearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E22E695825D4B97900CF53B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E22E695925D4B97900CF53B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E22E695D25D4B97A00CF53B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

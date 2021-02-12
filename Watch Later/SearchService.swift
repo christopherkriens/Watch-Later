@@ -7,16 +7,16 @@
 
 import Foundation
 
-enum ServiceError: Error {
-    case queryEncoding
-    case networkData
-    case jsonDecoding
+enum ServiceError: String, Error {
+    case queryEncoding = "Unable to build a valid search query with the provided search input."
+    case networkData = ""
+    case jsonDecoding = "JSON Decoding failed, the data received isn't in a format that was expected."
 }
 
-let omdbBaseUrl = "https://www.omdbapi.com"
+let omdbBaseUrl = "https://www.omdbapi.com/"
 let apiKey = "4a9d2fcc"
 
-class Service {
+class SearchService {
 
     static func search(query: String, type: SearchResultItemType = .movie, completion: @escaping (Result<SearchResult, ServiceError>) -> ()) {
         guard let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {
@@ -31,6 +31,7 @@ class Service {
                 completion(.failure(.networkData))
                 return
             }
+
             guard let decodedResult = try? JSONDecoder().decode(SearchResult.self, from: rawJson) else {
                 completion(.failure(.jsonDecoding))
                 return
